@@ -1,0 +1,24 @@
+npm install -s express
+npm install -s cors
+
+
+npm install -g nodemon -> for server 
+
+// CREACION DE DOCKER 
+// descargar la imagen
+docker build -t docker-node .
+
+// para ver las imagenes
+docker images
+
+// para iniciar
+// -d para que corra en 2 plano
+// nodejs-container -> nombre que se le va a poner
+// docker-node -> nomrbe imagen
+docker run -p 3000:8080 -d --name nodejs-container docker-node
+
+// para verificar si esta corriendo
+docker ps 
+
+// detener docker
+docker stop numeroPORTS

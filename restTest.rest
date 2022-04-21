@@ -1,0 +1,53 @@
+// Get Hello
+
+// "msg": "Hello World from get request!"
+###
+GET http://localhost:8080/hello
+
+
+// Get lang
+// "msg": "Hola Mundo!"
+###
+GET http://localhost:8080/hello/es
+
+
+//POST
+// "msg": "Hello World from post request!"
+# "result": "Hola Mauri"
+# "result": 20
+###
+POST http://localhost:8080/hello
+Content-Type: application/json
+
+{
+    "b":10,
+    "a":10
+}
+
+###
+### DESDE DOCKER
+###
+
+// "msg": "Hello World from get request!"
+###
+GET http://localhost:3000/hello
+
+
+// Get lang
+// "msg": "Hola Mundo!"
+###
+GET http://localhost:3000/hello/es
+
+
+//POST
+// "msg": "Hello World from post request!"
+# "result": "Hola Mauri"
+# "result": 20
+###
+POST http://localhost:3000/hello
+Content-Type: application/json
+
+{
+    "b":10,
+    "a":10
+}
